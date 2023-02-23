@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlus_Transportation", "AkademiPlus_Transportation\AkademiPlus_Transportation.csproj", "{0E18C199-DF25-4A68-8F7B-E7EC7269119D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E18C199-DF25-4A68-8F7B-E7EC7269119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E18C199-DF25-4A68-8F7B-E7EC7269119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E18C199-DF25-4A68-8F7B-E7EC7269119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E18C199-DF25-4A68-8F7B-E7EC7269119D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {077A5F6D-51EB-4968-B97C-78622C645B30}
+	EndGlobalSection
+EndGlobal
