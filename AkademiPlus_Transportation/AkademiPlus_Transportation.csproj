@@ -129,8 +129,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,9 +235,20 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\AddCategory.cshtml" />
+    <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\AddCustomer.cshtml" />
+    <Content Include="Views\Customer\UpdateCustomer.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\AddEmployee.cshtml" />
+    <Content Include="Views\Employee\UpdateEmployee.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\AddProduct.cshtml" />
+    <Content Include="Views\Product\UpdateProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Process\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
