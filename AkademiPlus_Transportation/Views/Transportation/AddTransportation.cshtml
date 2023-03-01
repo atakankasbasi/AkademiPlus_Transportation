@@ -1,0 +1,43 @@
+﻿@model AkademiPlus_Transportation.Models.TblTransportation
+
+@{
+    ViewBag.Title = "AddTransportation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Taşıma Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Müşteri</label>
+    @Html.DropDownListFor(x => x.Customer, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+    <br />
+    <label>Kategori</label>
+    @Html.DropDownListFor(x => x.Category, (List<SelectListItem>)ViewBag.v2, new { @class = "form-control" })
+    <br />
+    <label>Ürün</label>
+    @Html.DropDownListFor(x => x.Product, (List<SelectListItem>)ViewBag.v3, new { @class = "form-control" })
+    <br />
+    <label>Personel</label>
+    @Html.DropDownListFor(x => x.Employee, (List<SelectListItem>)ViewBag.v4, new { @class = "form-control" })
+    <br />
+    <label>Durum</label>
+    @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+    <br />
+    <label>Kalkış</label>
+    @Html.TextBoxFor(x => x.Departure, new { @class = "form-control" })
+    <br />
+    <label>Varış</label>
+    @Html.TextBoxFor(x => x.Arrival, new { @class = "form-control" })
+    <br />
+    <label>Durum</label>
+    @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+    <br />
+    <label>Tarih</label>
+    <input type="datetime" class="form-control" name="Date" />
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Taşıma Ekle</button>
+</form>

@@ -2,29 +2,30 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
 }
 
 <h2>Personel Listesi</h2>
 
 <table class="table table-bordered">
     <tr>
-        <th>#</th>
-        <th>Görsel</th>
-        <th>Personel Adı</th>
-        <th>Personel Soyadı</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
+        <th style=" text-align: center; vertical-align: middle; ">#</th>
+        <th style=" text-align: center; vertical-align: middle; ">Görsel</th>
+        <th style=" text-align: center; vertical-align: middle; ">Personel Adı Soyadı</th>
+        <th style=" text-align: center; vertical-align: middle; ">Sil</th>
+        <th style=" text-align: center; vertical-align: middle; ">Güncelle</th>
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@item.EmployeeID</td>
-            <td><img src="@item.EmployeeImage" style="width:100px; height:100px;"/></td>
-            <td>@item.EmployeeName</td>
-            <td>@item.EmployeeSurname</td>
-            <td><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-danger">Sil</a></td>
-            <td><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-success">Güncelle</a></td>
-        </tr>
+        count++;
+    <tr>
+        <td style=" text-align: center; vertical-align: middle;">@count</td>
+        <td style=" text-align: center; vertical-align: middle;"><img src="@item.EmployeeImage" style="width: 100px; height: 100px; border-radius: 50%;" /></td>
+        <td style=" text-align: center; vertical-align: middle;">@item.EmployeeName @item.EmployeeSurname</td>
+        <td style=" text-align: center; vertical-align: middle;"><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-danger">Sil</a></td>
+        <td style=" text-align: center; vertical-align: middle;"><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-success">Güncelle</a></td>
+    </tr>
     }
+</table>
 </table>
 <a href="/Employee/AddEmployee/" class="btn btn-primary">Yeni Personel Kaydı</a>

@@ -1,0 +1,43 @@
+﻿@model List<AkademiPlus_Transportation.Models.TblTransportation>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Taşımacılık Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Müşteri</th>
+        <th>Kategori</th>
+        <th>Ürün</th>
+        <th>Personel</th>
+        <th>Durum</th>
+        <th>Kalkış</th>
+        <th>Varış</th>
+        <th>Tarih</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TransportationID</td>
+            <td>@item.TblCustomer.CustomerName @item.TblCustomer.CustomerSurname</td>
+            <td>@item.TblCategory.CategoryName</td>
+            <td>@item.TblProduct.ProductName</td>
+            <td>@item.TblEmployee.EmployeeName</td>
+            <td>@item.Status</td>
+            <td>@item.Departure</td>
+            <td>@item.Arrival</td>
+            <td>@item.Date</td>
+            <td>@item.Description</td>
+
+            <td><a href="/Transportation/DeleteTransportation/@item.TransportationID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Transportation/UpdateTransportation/@item.TransportationID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Transportation/AddTransportation/" class="btn btn-primary">Yeni Taşıma Kaydı</a>
