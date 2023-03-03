@@ -17,6 +17,7 @@
         <AssociationConnector Association="DbTransportModel.FK_TblTransportation_TblEmployee" ManuallyRouted="false" />
         <AssociationConnector Association="DbTransportModel.FK_TblProcess_TblTransportation" ManuallyRouted="false" />
         <AssociationConnector Association="DbTransportModel.FK_TblTransportation_TblProduct" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbTransportModel.TblAbout" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
