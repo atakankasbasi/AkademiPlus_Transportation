@@ -5,19 +5,126 @@
 }
 
 <h2>İstatistikler</h2> 
-<div class="container">
+@*<div class="container">
     <div class="row">
         <div class="col-sm">
             <div class="card" style="width:200px;height:150px;background-color:#ff6a00; text-align:center; padding-top:60px">
-                Kategori Sayısı: @ViewBag.customerCount
+                Müşteri Sayısı: @ViewBag.customerCount
             </div>             
             <div class="card" style="width:200px;height:150px;background-color:#d62525; text-align:center; padding-top:60px">
                 Ankaradaki Müşteriler: @ViewBag.cityAnkara
-            </div>             <div class="card" style="width:200px;height:150px;background-color:#44db32; text-align:center; padding-top:60px">
+            </div>             
+            <div class="card" style="width:200px;height:150px;background-color:#44db32; text-align:center; padding-top:60px">
                 Kategori Sayısı: @ViewBag.categoryCount
-            </div>             <div class="card" style="width:200px;height:150px;background-color:#4c34bd; text-align:center; padding-top:60px">
+            </div>            
+            <div class="card" style="width:200px;height:150px;background-color:#4c34bd; text-align:center; padding-top:60px">
                 1 Numaralı Müşteri Şehri: @ViewBag.citySelect
             </div>        
+        </div>
+    </div>
+</div>*@
+@*<section class="my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 py-3">
+                <div class="card" style="width: 13rem; height:80px; background-color:darkred">
+                    <div class="card-body">
+                        <h6 class="card-text" style="color:white">Müşteri Sayısı: @ViewBag.customerCount</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3">
+                <div class="card" style="width: 13rem; height: 80px; background-color: darkred">
+                    <div class="card-body">
+                        <h6 class="card-text" style="color:white; ">Ankaradaki Müşteriler: @ViewBag.cityAnkara</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3">
+                <div class="card" style="width: 13rem; height: 80px; background-color: darkred">
+                    <div class="card-body">
+                        <h6 class="card-text" style="color:white">Kategori Sayısı: @ViewBag.categoryCount</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3">
+                <div class="card" style="width: 13rem; height: 80px; background-color: darkred">
+                    <div class="card-body">
+                        <h6 class="card-text" style="color:white">1 Numaralı Müşteri Şehri: @ViewBag.citySelect</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>*@
+
+<div class="row justify-content-center">
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color: red; color: white">
+            <h3 class="box-title">Müşteri Sayısı: </h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto"><span class="counter text-success">@ViewBag.customerCount</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color: blueviolet; color: white">
+            <h3 class="box-title">Ankaradaki Müşteriler: </h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto"><span class="counter text-purple">@ViewBag.cityAnkara</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color: black; color: white">
+            <h3 class="box-title">Kategori Sayısı:</h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto"><span class="counter text-info">@ViewBag.categoryCount</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color:salmon; color:white">
+            <h3 class="box-title">1 Numaralı Müşteri Şehri:</h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto"><span class="counter text-purple">@ViewBag.cityName</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color: teal; color: white">
+            <h3 class="box-title">1 Numaralı Çalışanın Adı:</h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto"><span class="counter text-success">@ViewBag.employeeName </span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <div class="white-box analytics-info" style="background-color: forestgreen; color: white">
+            <h3 class="box-title">Ürün Sayısı</h3>
+            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                    <div id="sparklinedash3"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas></div>
+                </li>
+                <li class="ms-auto">
+                    <span class="counter text-info">@ViewBag.urunSayısı</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
