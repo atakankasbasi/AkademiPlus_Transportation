@@ -752,6 +752,11 @@
     <Content Include="Views\Shared\_Panel.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\PartialHeader.cshtml" />
+    <Content Include="Views\Admin\PartialPreloader.cshtml" />
+    <Content Include="Views\Admin\PartialTopbar.cshtml" />
+    <Content Include="Views\Admin\PartialSidebar.cshtml" />
+    <Content Include="Views\Admin\PartialFooter.cshtml" />
+    <Content Include="Views\Admin\PartialScripts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
