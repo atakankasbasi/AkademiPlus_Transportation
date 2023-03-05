@@ -749,13 +749,9 @@
     <Content Include="Templates\Ample\scss\widgets\profile.scss" />
     <Content Include="Templates\Ample\scss\widgets\steamline.scss" />
     <Content Include="Templates\Ample\scss\widgets\widgets.scss" />
-    <Content Include="Views\Admin\PartialHeader.cshtml" />
-    <Content Include="Views\Admin\PartialSidebar.cshtml" />
-    <Content Include="Views\Admin\PartialNavbar.cshtml" />
-    <Content Include="Views\Admin\PartialFooter.cshtml" />
-    <Content Include="Views\Admin\PartialScript.cshtml" />
     <Content Include="Views\Shared\_Panel.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\PartialHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

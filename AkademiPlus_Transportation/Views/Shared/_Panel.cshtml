@@ -89,7 +89,7 @@
                                 </a>
                             </form>
                         </li>
-                         <li>
+                        <li>
                             <a class="profile-pic" href="#">
                                 <img src="~/Templates/Ample/plugins/images/users/varun.jpg" alt="user-img" width="36"
                                      class="img-circle"><span class="text-white font-medium">Steave</span>
@@ -102,76 +102,86 @@
                 </div>
             </nav>
         </header>
-         <aside class="left-sidebar" data-sidebarbg="skin6">
-            <!-- Sidebar scroll-->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
             <div class="scroll-sidebar">
-                <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <!-- User Profile-->
                         <li class="sidebar-item pt-2">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Admin/Index"
                                aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
-                                <span class="hide-menu">Transportation</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Category/Index"
-                               aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i>
                                 <span class="hide-menu">Ana Sayfa</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Customer/Index"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Category/Index/"
                                aria-expanded="false">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Basic Table</span>
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                <span class="hide-menu">Kategoriler</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Employee/Index"
                                aria-expanded="false">
-                                <i class="fa fa-font" aria-hidden="true"></i>
-                                <span class="hide-menu">Icon</span>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <span class="hide-menu">Personel</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Process/Index"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Customer/Index"
                                aria-expanded="false">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
-                                <span class="hide-menu">Google Map</span>
+                                <i class="fa fa-handshake" aria-hidden="true"></i>
+                                <span class="hide-menu">Müşteriler</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Product/Index"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Product/Index/"
                                aria-expanded="false">
-                                <i class="fa fa-columns" aria-hidden="true"></i>
-                                <span class="hide-menu">Blank Page</span>
+                                <i class="fa fa-ruble-sign" aria-hidden="true"></i>
+                                <span class="hide-menu">Ürünler</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Statistic/Index"
-                               aria-expanded="false">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Error 404</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Transportation/Index"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Process/Index/"
                                aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Error 404</span>
+                                <span class="hide-menu">İşlemler</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Transportation/Index/"
+                               aria-expanded="false">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <span class="hide-menu">Taşıma</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                               aria-expanded="false">
+                                <i class="fa fa-wrench" aria-hidden="true"></i>
+                                <span class="hide-menu">Ayarlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Statistic/Index/"
+                               aria-expanded="false">
+                                <i class="fa fa-chart-bar" aria-hidden="true"></i>
+                                <span class="hide-menu">İstatistikler</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                               aria-expanded="false">
+                                <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                                <span class="hide-menu">Çıkış Yap</span>
                             </a>
                         </li>
                     </ul>
-
                 </nav>
-                <!-- End Sidebar navigation -->
             </div>
-            <!-- End Sidebar scroll-->
         </aside>
+
+
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -182,28 +192,28 @@
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            
+
 
             <div class="container-fluid">
-                
-                      <div class="row">
+
+                <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="white-box">
                             <h3 class="box-title">@RenderBody()</h3>
-                           
-                          
+
+
                         </div>
                     </div>
                 </div>
-               
+
             </div>
-            
-             <footer class="footer text-center">
+
+            <footer class="footer text-center">
                 2023 © @DateTime.Now.ToString() <a href="https://www.wrappixel.com/">wrappixel.com</a>
             </footer>
-           
-                </div>
+
         </div>
+    </div>
         
         
        <script src="~/Templates/Ample/plugins/bower_components/jquery/dist/jquery.min.js"></script>
