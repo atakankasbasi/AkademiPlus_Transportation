@@ -9,7 +9,7 @@ namespace AkademiPlus_Transportation.Controllers
         DbTransportEntities db = new DbTransportEntities();
         public ActionResult Index()
         {
-            var values = db.TblCustomer.Where(x => x.CustomerCity == "Ankara").ToList();
+            var values = db.TblCustomer.ToList();
             return View(values);
         }
         [HttpGet]
