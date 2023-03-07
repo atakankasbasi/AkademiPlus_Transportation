@@ -21,5 +21,8 @@
     <label>Ürün Açıklaması</label>
     @Html.TextAreaFor(x => x.ProductDescription, 5, 1, new { @class = "form-control" })
     <br />
+    <label>Ürün Kategorisi</label>
+    @Html.DropDownListFor(x => x.ProductCategory, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+    <br />
     <button class="btn btn-success">Ürünü Güncelle</button>
 </form>

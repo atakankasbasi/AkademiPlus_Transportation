@@ -50,6 +50,13 @@ namespace AkademiPlus_Transportation.Controllers
         [HttpGet]
         public ActionResult UpdateProduct(int id)
         {
+            List<SelectListItem> values = (from x in db.TblCategory
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             var value = db.TblProduct.Find(id);
             return View(value);
         }

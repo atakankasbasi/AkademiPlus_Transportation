@@ -1,20 +1,21 @@
 ﻿@model AkademiPlus_Transportation.Models.TblProcess
-
 @{
-    ViewBag.Title = "AddProcess";
+    ViewBag.Title = "UpdateProcess";
     Layout = "~/Views/Shared/_Panel.cshtml";
 }
 
-<h2>Yeni İşlem Ekleme Sayfası</h2>
+<h2>İşlem Güncelleme Sayfası</h2>
 
 <form method="post">
-    <label>Taşıma</label>
+    @Html.HiddenFor(x => x.ProcessID)
+    <label>Taşıma:</label>
+    <label>Müşteri</label>
     @Html.DropDownListFor(x => x.Transportation, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
     <br />
-    <label>Açıklama</label>
+    <br />
+    <label>Açıklama:</label>
     @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
     <br />
-
-    <button class="btn btn-primary">İşlem Ekle</button>
+    <button class="btn btn-success">Personeli Güncelle</button>
 </form>
 

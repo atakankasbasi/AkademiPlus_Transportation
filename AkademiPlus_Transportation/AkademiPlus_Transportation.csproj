@@ -764,6 +764,7 @@
     <Content Include="Views\Admin\PartialScripts.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Settings\Index.cshtml" />
+    <Content Include="Views\Process\UpdateProcess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
