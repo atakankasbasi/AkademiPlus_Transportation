@@ -25,8 +25,10 @@ namespace AkademiPlus_Transportation.Models
         public string ProductSizeType { get; set; }
         public string ProductSize { get; set; }
         public string ProductDescription { get; set; }
+        public Nullable<int> ProductCategory { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblTransportation> TblTransportation { get; set; }
+        public virtual TblCategory TblCategory { get; set; }
     }
 }

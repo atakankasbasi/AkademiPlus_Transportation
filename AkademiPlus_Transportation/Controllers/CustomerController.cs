@@ -4,6 +4,7 @@ using System.Web.Mvc;
 
 namespace AkademiPlus_Transportation.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
         DbTransportEntities db = new DbTransportEntities();
