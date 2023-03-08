@@ -1,4 +1,10 @@
-# AkademiPlus_Transportation  MVC Project
+# AkademiPlus_Transportation  ASP.NET Framework Database First MVC Project
+
+## Used
+
+- ASP.NET MVC
+- Entity Framework
+- HTML, CSS, Bootstrap
 
 ![1](https://user-images.githubusercontent.com/116946800/223692412-ab77f7cd-ba3a-4016-9200-40fe0d1b553e.jpeg)
 ![2](https://user-images.githubusercontent.com/116946800/223692431-361d0d83-c837-4d8e-965a-3b4c4b3b462a.jpeg)
